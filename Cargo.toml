@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "aidl-rust-codegen",
+    "adb-manager-client-example",
+]
+
+[workspace.package]
+rust-version = "1.66.1"
+version = "0.1.0"
+#TODO: Update these
+repository = "//https://github.com/eclipse-uprotocol/up-client-android-rust"
+homepage = "https://github.com/eclipse-uprotocol"
+authors = [
+    "Pete LeVasseur <plevasseur@gmail.com>",
+]
+edition = "2021"
+keywords = ["Android", "SystemService"]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+anyhow = "1.0.69"
+async-trait = "0.1.64"
+binder = { git = "https://github.com/PLeVasseur/binder_rs.git", branch = "main" }
+binder_tokio = { git = "https://github.com/PLeVasseur/binder_rs.git", branch = "main" }
+clap = { version = "4.1.7", features = ["derive"] }
+lazy_static = "1.4.0"
+protobuf = { version = "3.3" }
+tokio = { version = "1.25.0", features = ["full"] }

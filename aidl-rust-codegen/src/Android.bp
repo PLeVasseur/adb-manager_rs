@@ -1,0 +1,9 @@
+rust_library {
+    name: "libmystubiadbcallback",
+    srcs: ["service_stub/my_stub_iadbcallback.rs"],
+    crate_name: "mystubiadbcallback",
+    rustlibs: [
+        "android.debug.iadbmanager-rust",
+        "libbinder_rs",
+    ],
+}

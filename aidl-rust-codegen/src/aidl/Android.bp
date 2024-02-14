@@ -1,0 +1,11 @@
+aidl_interface {
+    name: "android.debug.iadbmanager",
+    srcs: ["android/debug/*.aidl",
+    ],
+    unstable: true,
+    backend: {
+        rust: {
+            enabled: true
+        },
+    },
+}
